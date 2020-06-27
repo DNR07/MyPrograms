@@ -1,0 +1,27 @@
+// Program to implement concept of arrays in Java
+import java.lang.Math;  // This package has been imported for power function.
+import java.util.*;	// This package has been imported for Scanner Class-used for taking input.
+class TakeInput{
+	void TakeInputMet(){
+		System.out.println("\n\nProgram to print the number of vertices from a 0 dimensional hypercube to a n-dimensional hypercube.\n\nEnter n value:");
+		Scanner n1=new Scanner(System.in);
+		int n=n1.nextInt();	//Taking input from user.	
+		int a[]=new int[n];
+		if(n>0){
+			System.out.println("The number of vertices in 0-cube to "+n+"-cube is:");
+			for (int j=0;j<=n;j++){
+				System.out.println("The number of vertices in a "+j+"-dimensional hypercube: "+Math.pow(2,j));	// pow(a,b) method used to find the value of a^b
+			}
+}
+}
+}
+class ArrayPrgMain{
+	public static void main(String[] args){
+		TakeInput n2=new TakeInput();
+		n2.TakeInputMet();	//Instantiating TakeInput class so as to call it's function 
+}
+}
+
+ 
+
+
