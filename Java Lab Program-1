@@ -1,0 +1,32 @@
+\\P                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           // Proram to implemnt concept of classes in Java.
+import java.util.*;
+class Box {
+double w;
+double h;
+double l;
+// display volume of a box
+void volume() {
+System.out.print("The Volume of cuboid is: ");
+System.out.println(w * h * l);
+}
+}
+
+class BoxDemo3 {
+public static void main(String args[]) {
+Box mybox1 = new Box();
+// take values for mybox1's variables from user
+Scanner w1=new Scanner(System.in);
+Scanner h1=new Scanner(System.in);
+Scanner l1=new Scanner(System.in);
+System.out.println("Enter the width of the cuboid:");
+mybox1.w = w1.nextInt();
+System.out.println("Enter the height of the cuboid:");
+mybox1.h = h1.nextInt();
+System.out.println("Enter the length of the cuboid:"); 
+mybox1.l = l1.nextInt();
+
+// display volume of first box
+mybox1.volume();
+}
+}
+
