@@ -1,0 +1,19 @@
+import java.util.*;
+interface InterClass{
+	public void AreaVol();
+}
+
+class InterPrgm implements InterClass{
+	public void AreaVol(){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the side of the square");
+		int a=sc.nextInt();
+		System.out.println("The area of the square is "+a*a);
+		System.out.println("The volume of the square is "+a*a*a);
+	}
+	public static void main(String[] args){
+		InterPrgm i= new InterPrgm();
+		i.AreaVol();
+}
+}
+		
