@@ -1,0 +1,27 @@
+import java.util.*;
+import Rand2.FindVertice;
+public class PackImpl{
+	public static  void main(String[] args){
+		FindVertice v=new FindVertice();
+		System.out.println("Enter the dimension of the hypercube whose vertices is to be found:");
+		Scanner sc1= new Scanner(System.in);
+		int n=sc1.nextInt();
+		v.NoOfVertice(n);
+}
+}
+
+//Package Code:
+
+package Rand2;
+import java.lang.Math;
+public class FindVertice{
+	public void NoOfVertice(int a){
+		if(a>0){
+			System.out.println("The number of vertices in a "+a+"-dimensional hypercube: "+Math.pow(2,a));	// pow(a,b) method used to find the value of a^b
+			}
+	}
+public static void main(String[] args){
+	FindVertice f=new FindVertice();
+	f.NoOfVertice(10000000);
+}
+}
